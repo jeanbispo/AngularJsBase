@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Jean Bispo">
+    <link rel="shortcut icon" href="assets/images/dev-icon.png" type="image/x-icon">
+    <title>Site Name</title> 
+
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/startbootstrap-full-slider/css/full-slider.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css"/>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+
+
+<script type="text/javascript">
+
+
+  function onReady(callback) {
+  var intervalId = window.setInterval(function() {
+    if ((document.getElementsByClassName('carousel-item')[0] !== undefined)||(document.getElementsByClassName('my-section')[0] !== undefined)) {
+      window.clearInterval(intervalId);
+      callback.call(this);
+    }
+  }, 1000);
+}
+
+function setVisible(selector, visible) {
+  document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+//  setVisible('.page', true);
+  setVisible('#load', false);
+});
+
+  
+
+/*window.onload = function() {
+$("#load").removeClass("dsp-load");
+$("#load").addClass("dsp-load1");
+
+
+}; */
+
+
+</script>
+      <!-- 
+     _   _____       ___   __   _        _____   _   _____   _____   _____  
+    | | | ____|     /   | |  \ | |      |  _  \ | | /  ___/ |  _  \ /  _  \ 
+    | | | |__      / /| | |   \| |      | |_| | | | | |___  | |_| | | | | | 
+ _  | | |  __|    / / | | | |\   |      |  _  { | | \___  \ |  ___/ | | | | 
+| |_| | | |___   / /  | | | | \  |      | |_| | | |  ___| | | |     | |_| | 
+\_____/ |_____| /_/   |_| |_|  \_|      |_____/ |_| /_____/ |_|     \_____/ 
+    
+    att: 14/08/2018
+    v. -1.0.0
+  -->
+
+  </head>
+
+  <div class="text-center text-muted" id="load">
+  <div class="backdrop">
+    <div class="loading">
+     <div class="spin"><div class="ball"></div><div class="ball1"></div></div>
+     Carregando. Por favor aguarde...</div>
+  </div>
+</div>
+
+  <body id="page-top">
+
+
+
+
+
+
+ <div class="app app-content" id="app" ui-view></div>
+
+
+    <div class="parallax-container footer-parallax">
+
+      <div class="slide-text text-footer-parallax">
+              
+                <h3 class="display-2">SIGA-NOS</h3>       
+                
+                <div><a style="display: none" class="btn btn-social" title="Twitter" href="#"><i class="fa fa-twitter"></i></a> <a style="display: none" class="btn btn-social" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>  <a class="btn btn-social" title="YouTube" href="https://www.youtube.com/channel/UCHjRbOlCTW4yPIBKcbHZnTw" target="_blank"><i class="fa fa-youtube"></i></a> <a class="btn btn-social" title="Instagram" target="_blank" href="https://www.instagram.com/retirodejovensfg/"><i class="fa fa-instagram"></i></a>      </div>
+              
+            </div>
+   
+      <div class="parallax"><img src="/assets/images/landscape3.jpg"></div>
+    </div>
+
+
+    <footer class="myfooter" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    
+    <div class="container">
+        <p class="text-xs-center">Copyright (c) 2017-2018</p>
+    </div>
+    </footer>
+
+
+
+
+
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+
+    
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="/node_modules/angular-materialize/src/angular-materialize.min.js"></script>
+  
+  
+
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/rotas.js"></script>
+    <script src="/src/js/config.js"></script>
+
+    <script src="/src/js/controller/homeCtrl.js"></script>
+
+    <script src="/src/js/directives/ifLoadingDirective.js"></script>
+
+
+    
+  </body>
+
+
+</html>

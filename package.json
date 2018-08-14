@@ -1,0 +1,31 @@
+{
+  "name": "jbappbase",
+  "version": "1.0.0",
+  "description": "App base em angularjs desenvolvido por Jean Bispo",
+  "main": "index.js",
+  "dependencies": {
+    "@uirouter/angularjs": "0.4.2",
+    "angular": "1.6.4",
+    "angular-materialize": "0.2.2",
+    "bootstrap": "^4.1.3",
+    "jquery": "3.2.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "popper.js": "^1.14.4",
+    "startbootstrap-full-slider": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/shvot/jbappbase.git"
+  },
+  "keywords": [],
+  "author": "Jean Bispo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/shvot/jbappbase/issues"
+  },
+  "homepage": "https://gitlab.com/shvot/jbappbase#README"
+}
