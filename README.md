@@ -56,4 +56,6 @@ http-server
 2.  ```PT/BR```: Caso tenha instalado o gulp:
 ```EN```: If you installed gulp:
  
-```gulp serve```
+```
+gulp serve
+```
