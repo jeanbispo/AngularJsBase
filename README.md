@@ -1,0 +1,1 @@
+O repositório é um modelo para iniciar o desenvolvimento de projetos da web em AngularJS (1.6.4).
